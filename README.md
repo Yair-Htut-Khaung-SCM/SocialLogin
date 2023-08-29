@@ -184,14 +184,6 @@ class LineProvider extends AbstractProvider implements ProviderInterface
 
 // ...
 ```
-#### in `.env` put line login's `[Channel ID]`, `[Channel Secret]`, `[Callback Url]` which i have showed sample in `.env.example` file
-
-```
-LINE_CHANNEL_ID=[Channel ID]
-LINE_CHANNEL_SECRET=[Channel Secret]
-LINE_CALLBACK_URL=[Callback URL]
-```
-#### Enter the obtained values for `[Channel ID]`, `[Channel Secret]`, and `[Callback URL]`.
 
 Add credentials to `config/services.php`:
 
@@ -285,7 +277,7 @@ Once ngrok is running, it will provide you with a unique secure URL https://some
 after the setup that i will show below and run `php artisan serve` and paste the copyied link in the browser url should load up the main page
 
 
-#### To set up  `[client ID]`, `[client Channel Secret]`, and `[Callback URL]` in `.env` file you need to created developer account of each `twitter`, `line`, `facebook`, `google`, `github`.
+#### To set up  `[client ID]`, `[client Channel Secret]`, and `[Callback URL]` in `.env` file you need to created developer account of each `twitter`, `line`, `facebook`, `google`, `github`. I put .env.example to see where to put
 
 ## Twitter Developer Account Setup
 
