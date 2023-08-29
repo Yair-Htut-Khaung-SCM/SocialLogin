@@ -93,7 +93,7 @@ a:hover .fa-google{
 <div class="row justify-content-center mt-5">
         <div class="col-lg-4">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header d-flex justify-content-center align-items-center">
                     <h1 class="card-title">Login</h1>
                 </div>
                 <div class="card-body">
