@@ -133,43 +133,10 @@ a:hover .fa-google{
                         @endif
                         </a>
                         @endforeach
-                        {{-- <a class="twitter" href="login/twitter"><i class="fa fa-twitter"></i></a>
-                        <a class="facebook" href="login/facebook"><i class="fa fa-facebook"></i></a>
-                        <a class="google"><i class='fa fa-google'></i></a>
-                        <a class="github"><i class='fa fa-github'></i></a>
-                        <a class="line"><i class='fa line fa-google'></i></a> --}}
                     </div>
                 </div>
             </div>
         </div>
 </div>
-
-{{-- <div class="login-form">
-    <form>
-      <h1 style="padding-bottom:20px;font-weight:bold">MTM Social Login</h1>
-      <div class="form-group">
-        <input type="email" name="email" placeholder="E-mail Address">
-        <span class="input-icon"><i class="fa fa-envelope"></i></span>
-      </div>
-      <div class="form-group"  style="margin-bottom:30px;">
-        <input type="password" name="psw" placeholder="Password">
-        <span class="input-icon"><i class="fa fa-lock"></i></span>
-      </div>      
-      <button class="login-btn">Login</button>      
-      <a class="reset-psw" href="#">Forgot your password?</a>
-      <div class="seperator"><b>or</b></div>
-      <p>Sign in with your social media account</p>
-      <!-- Social login buttons -->
-      <div class="social-icon">
-	  
-        <a class="button twitter" href="login/twitter"><i class="fa fa-twitter"></i></a>
-        <a class="button facebook" href="login/facebook"><i class="fa fa-facebook"></i></a>
-		<a class="button google"><i class='fa fa-google'></i></a>
-		<a class="button github"><i class='fa fa-github'></i></a>
-        <a class="button line"><i class='fa fa-google'></i></a>
-      </div>
-    </form>
-</div> --}}
-
 </body>
 </html>

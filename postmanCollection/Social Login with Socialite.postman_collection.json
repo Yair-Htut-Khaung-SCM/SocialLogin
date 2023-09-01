@@ -1,0 +1,593 @@
+{
+	"info": {
+		"_postman_id": "7bd4d19a-0010-4ba8-b8eb-70df11035fd1",
+		"name": "Social Login with Socialite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29261364"
+	},
+	"item": [
+		{
+			"name": "Twitter Auth",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientSecret",
+							"value": "1y_Msof36SSXG0iikHP2bVV4BJwg9GEF4hJYLiJKWF_t4R6_0W",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "QXhhVnpNM29vTmV6NTRSazhXMHg6MTpjaQ",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code_with_pkce",
+							"type": "string"
+						},
+						{
+							"key": "code_verifier",
+							"value": "challenge",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "state",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "tweet.read users.read offline.access",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "plain",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenName",
+							"value": "Token1",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authRequestParams",
+							"value": [],
+							"type": "any"
+						},
+						{
+							"key": "refreshTokenUrl",
+							"value": "https://api.twitter.com/2/oauth2/token",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://api.twitter.com/2/oauth2/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://twitter.com/i/oauth2/authorize",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://studico.127.0.0.1.nip.io/app/signup/callback/twitter",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": true,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.twitter.com/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twitter",
+						"com"
+					],
+					"path": [
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Google Auth",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "openid profile email",
+							"type": "string"
+						},
+						{
+							"key": "refreshTokenUrl",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "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",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "708909477547-dtag0ecsr2qfan0f3n18r6noqvg9ccql.apps.googleusercontent.com",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth2.googleapis.com/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/v2/auth",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "code_verifier",
+							"value": "challenge",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "state",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "plain",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenName",
+							"value": "Token1",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authRequestParams",
+							"value": [],
+							"type": "any"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://studico.127.0.0.1.nip.io/app/signup/callback/twitter",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": true,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Github Auth",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "user email",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "3b02d997039d62d661bccf71ab5cca818a80495a",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "bca73f7708fd33486c10",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://github.com/login/oauth/access_token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://github.com/login/oauth/authorize",
+							"type": "string"
+						},
+						{
+							"key": "refreshTokenUrl",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "code_verifier",
+							"value": "challenge",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "state",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "plain",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenName",
+							"value": "Token1",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authRequestParams",
+							"value": [],
+							"type": "any"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://studico.127.0.0.1.nip.io/app/signup/callback/twitter",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": true,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Line Auth",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessTokenUrl",
+							"value": "https://api.line.me/oauth2/v2.1/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://access.line.me/oauth2/v2.1/authorize",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "profile openid email",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "14bb2eedd888ec2761b1ec1712633457",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "2000565521",
+							"type": "string"
+						},
+						{
+							"key": "refreshTokenUrl",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "code_verifier",
+							"value": "challenge",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "state",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "plain",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenName",
+							"value": "Token1",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authRequestParams",
+							"value": [],
+							"type": "any"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://studico.127.0.0.1.nip.io/app/signup/callback/twitter",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": true,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FaceBook Auth",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "email",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "26710cf73a510b0cbe6b71ae1cf2add3",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "971575400562500",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://graph.facebook.com/v12.0/oauth/access_token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://www.facebook.com/v3.3/dialog/oauth",
+							"type": "string"
+						},
+						{
+							"key": "refreshTokenUrl",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "code_verifier",
+							"value": "challenge",
+							"type": "string"
+						},
+						{
+							"key": "state",
+							"value": "state",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "plain",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "tokenName",
+							"value": "Token1",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "authRequestParams",
+							"value": [],
+							"type": "any"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://studico.127.0.0.1.nip.io/app/signup/callback/twitter",
+							"type": "string"
+						},
+						{
+							"key": "tokenRequestParams",
+							"value": [
+								{
+									"key": "",
+									"value": "",
+									"enabled": true,
+									"send_as": "request_body"
+								}
+							],
+							"type": "any"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.facebook.com/v3.3/dialog/oauth?client_id=204645015706208&amp;redirect_uri=https%3A%2F%2Fa0ac-150-249-249-184.ngrok-free.app%2Foauth%2Ffacebook%2Fcallback&amp;scope=email&amp;response_type=code&amp;state=kuamCxpKMk4n3owde9rR1dTNtLF4ysUDfdek0BLa",
+					"protocol": "https",
+					"host": [
+						"www",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v3.3",
+						"dialog",
+						"oauth"
+					],
+					"query": [
+						{
+							"key": "client_id",
+							"value": "204645015706208"
+						},
+						{
+							"key": "amp;redirect_uri",
+							"value": "https%3A%2F%2Fa0ac-150-249-249-184.ngrok-free.app%2Foauth%2Ffacebook%2Fcallback"
+						},
+						{
+							"key": "amp;scope",
+							"value": "email"
+						},
+						{
+							"key": "amp;response_type",
+							"value": "code"
+						},
+						{
+							"key": "amp;state",
+							"value": "kuamCxpKMk4n3owde9rR1dTNtLF4ysUDfdek0BLa"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
